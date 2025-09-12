@@ -7,7 +7,7 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
-	state.Weapons:options('LeadenMelee','SavageWeapons','SavageWeapon','LastStand','Leaden') --'LeadenMelee','LeadenMelee2','AeolianWeapons','LeadenRanged','LastStand','SavageWeapons','SavageWeapon','Absorb'
+	state.Weapons:options('LeadenMelee','SavageWeapons','SavageWeapon','LastStand','Leaden','LastStandDW') --'LeadenMelee','LeadenMelee2','AeolianWeapons','LeadenRanged','LastStand','SavageWeapons','SavageWeapon','Absorb'
 	state.CompensatorMode:options('Always','300','1000','Never')
 	
     gear.RAbullet = "Chrono Bullet"
@@ -82,6 +82,7 @@ function init_gear_sets()
 	--sets.weapons.Prime = {main="Naegling",sub="Gleti's Knife",range="Earp"}
 	sets.weapons.LeadenRanged = {main={ name="Rostam", augments={'Path: A',}},sub='Tauret',range="Death Penalty"}
 	sets.weapons.LastStand = {main={ name="Rostam", augments={'Path: A',}},sub="Nusku Shield",range="Fomalhaut"}
+	sets.weapons.LastStandDW = {main="Naegling",sub='Tauret',range="Fomalhaut"}
 	--sets.weapons.RostamRanged = {main="Rostam",sub={name="Rostam", bag="Wardrobe 3"},range="Death Penalty"}
 	
     -- Precast Sets
