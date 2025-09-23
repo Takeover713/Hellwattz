@@ -226,7 +226,7 @@ function init_gear_sets()
     sets.precast.RA = {ammo=gear.RAbullet,
         head="Chass. Tricorne +3",
 		neck="Commodore Charm +2",
-        body="Laksa. Frac +3",
+        body="Laksa. Frac +4",
 		hands={ name="Lanun Gants +3", augments={'Enhances "Fold" effect',}},
 		Left_ring="Crepuscular Ring",
 		back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
@@ -266,7 +266,7 @@ function init_gear_sets()
 		
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
     head="Nyame Helm",
-    body="Laksa. Frac +3",
+    body="Laksa. Frac +4",
 	hands="Chasseur's Gants +3",
     legs="Nyame Flanchard",
     feet="Lanun Bottes +4",
@@ -280,7 +280,7 @@ function init_gear_sets()
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
         head="Nyame Helm",
-    body="Laksa. Frac +3",
+    body="Laksa. Frac +4",
 	hands="Chasseur's Gants +3",
     legs="Nyame Flanchard",
     feet="Lanun Bottes +4",
@@ -294,7 +294,7 @@ function init_gear_sets()
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Lanun Tricorne +3", -- need to +3 relic
-    body="Laksa. Frac +3",
+    body="Laksa. Frac +4",
     hands="Chasseur's Gants +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Lanun Bottes +4",
@@ -310,7 +310,7 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
         head="Lanun Tricorne +3", -- need to +3 relic
-    body="Laksa. Frac +3",
+    body="Laksa. Frac +4",
     hands="Chasseur's Gants +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Lanun Bottes +4",
