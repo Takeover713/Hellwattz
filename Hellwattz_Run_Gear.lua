@@ -205,7 +205,7 @@ function init_gear_sets()
     sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{body="Runeist's Coat +1",legs="Futhark Trousers +1"})
     sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
     sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{feet="Runeist's Boots +1"})
-    sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head="Fu. Bandeau +3"})
+    sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head="Fu. Bandeau +4"})
     sets.precast.JA['Liement'] = set_combine(sets.Enmity,{body="Futhark Coat +1"})
     sets.precast.JA['Gambit'] = set_combine(sets.Enmity,{hands="Runeist's Mitons +1"})
     sets.precast.JA['Rayke'] = set_combine(sets.Enmity,{feet="Futhark Boots +1"})
@@ -224,7 +224,7 @@ function init_gear_sets()
     -- sets.precast.JA['Vallation'].DT = set_combine(sets.Enmity.DT,{body="Runeist's Coat +1", legs="Futhark Trousers +1"})
     -- sets.precast.JA['Valiance'].DT = sets.precast.JA['Vallation'].DT
     -- sets.precast.JA['Pflug'].DT = set_combine(sets.Enmity.DT,{feet="Runeist's Boots +1"})
-    -- sets.precast.JA['Battuta'].DT = set_combine(sets.Enmity.DT,{head="Fu. Bandeau +3"})
+    -- sets.precast.JA['Battuta'].DT = set_combine(sets.Enmity.DT,{head="Fu. Bandeau +4"})
     -- sets.precast.JA['Liement'].DT = set_combine(sets.Enmity.DT,{body="Futhark Coat +1"})
     -- sets.precast.JA['Gambit'].DT = set_combine(sets.Enmity.DT,{hands="Runeist's Mitons +1"})
     -- sets.precast.JA['Rayke'].DT = set_combine(sets.Enmity.DT,{feet="Futhark Boots +1"})
@@ -277,7 +277,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	
     --sets.precast.FC = {		ammo="Sapience Orb",
-	--	head="Rune. Bandeau +3",
+	--	head="Rune. Bandeau +4",
 	--	body="Taeon Tabard",
 	--	hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
 	--	legs={ name="Futhark Trousers +1", augments={'Enhances "Inspire" effect',}},
@@ -292,7 +292,7 @@ function init_gear_sets()
 		
 	sets.precast.FC = {		
 		ammo="Sapience Orb",
-		head="Rune. Bandeau +3",
+		head="Rune. Bandeau +4",
 		neck="Voltsurge Torque",
 		left_ear="Etiolation Earring",
 		right_ear="Odnowa Earring +1",
@@ -305,7 +305,7 @@ function init_gear_sets()
 		back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10','Spell interruption rate down-10%',}},}
 		
 	--ammo="Sapience Orb",
-    --head="Rune. Bandeau +3",
+    --head="Rune. Bandeau +4",
     --neck="Orunmila's Torque",
     --ear1="Etiolation Earring",
     --ear2="Odnowa Earring +1",
@@ -319,7 +319,7 @@ function init_gear_sets()
 		
 			
 	sets.precast.FC.DT = {ammo="Staunch Tathlum +1",
-        head="Rune. Bandeau +3",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
+        head="Rune. Bandeau +4",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         body="Runeist's Coat +3",hands=gear.herculean_dt_hands,ring1="Moonbeam Ring",ring2="Moonbeam Ring",
         back="Moonlight Cape",waist="Flume Belt",legs="Eri. Leg Guards +3",feet="Erilaz Greaves +3"}
 			
@@ -381,7 +381,7 @@ function init_gear_sets()
             back="Moonlight Cape",waist="Flume Belt",legs="Rawhide Trousers",feet="Carmine Greaves +1"}
 			
 	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum +1",
-        head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
+        head="Fu. Bandeau +4",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         body="Runeist's Coat +3",hands=gear.herculean_dt_hands,ring1="Moonbeam Ring",ring2="Moonbeam Ring",
         back="Moonlight Cape",waist="Flume Belt",legs="Eri. Leg Guards +3",feet="Erilaz Greaves +3"}
 
@@ -399,8 +399,8 @@ function init_gear_sets()
 		right_ring="Stikini Ring",
 		back="Merciful Cape"})
 		
-    sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{head="Fu. Bandeau +3",legs="Carmine Cuisses +1"})
-    sets.midcast['Regen'] = set_combine(sets.midcast['Enhancing Magic'],{head="Rune. Bandeau +3"}) 
+    sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{head="Fu. Bandeau +4",legs="Carmine Cuisses +1"})
+    sets.midcast['Regen'] = set_combine(sets.midcast['Enhancing Magic'],{head="Rune. Bandeau +4"}) 
 	sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'],{head="Erilaz Galea +3"}) 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {ear2="Earthcry Earring",waist="Siegel Sash"})
 	sets.midcast.Flash = set_combine(sets.Enmity, {})
@@ -471,7 +471,7 @@ function init_gear_sets()
 		}
 		
 	sets.idle.KiteTank = {ammo="Staunch Tathlum +1",
-        head="Fu. Bandeau +1",neck="Vim Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
+        head="Fu. Bandeau +4",neck="Vim Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
         body="Futhark Coat +1",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Moonbeam Ring",
         back="Moonlight Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"}
 
@@ -512,7 +512,7 @@ function init_gear_sets()
 	-- Defense Sets
 	
 	sets.defense.PDT = {		ammo="Staunch Tathlum +1",
-		head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
+		head={ name="Fu. Bandeau +4", augments={'Enhances "Battuta" effect',}},
 		body="Futhark Coat +1",
 		hands="Runeist Mitons +1",
 		legs="Eri. Leg Guards +3",
@@ -526,13 +526,13 @@ function init_gear_sets()
 		back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','Enmity+10','Phys. dmg. taken-10%',}},}
 		
 	sets.defense.PDT_HP = {ammo="Staunch Tathlum +1",
-        head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
+        head="Fu. Bandeau +4",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         body="Runeist's Coat +3",hands=gear.herculean_dt_hands,ring1="Moonbeam Ring",ring2="Moonbeam Ring",
         back="Moonlight Cape",waist="Flume Belt",legs="Eri. Leg Guards +3",feet="Erilaz Greaves +3"}
 		
 	sets.defense.MDT = {    
 	ammo="Staunch Tathlum +1",
-    head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
+    head={ name="Fu. Bandeau +4", augments={'Enhances "Battuta" effect',}},
     body="Futhark Coat +1",
     hands="Runeist Mitons +1",
     legs="Eri. Leg Guards +3",
@@ -551,7 +551,7 @@ function init_gear_sets()
         back="Moonlight Cape",waist="Engraved Belt",legs="Eri. Leg Guards +3",feet="Erilaz Greaves +3"}
 	
 	sets.defense.BDT = {    ammo="Staunch Tathlum +1",
-    head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
+    head={ name="Fu. Bandeau +4", augments={'Enhances "Battuta" effect',}},
     body="Futhark Coat +1",
     hands="Runeist Mitons +1",
     legs="Eri. Leg Guards +3",
@@ -570,7 +570,7 @@ function init_gear_sets()
         back="Moonlight Cape",waist="Engraved Belt",legs="Eri. Leg Guards +3",feet="Erilaz Greaves +3"}
 	
 	sets.defense.MEVA = {    ammo="Staunch Tathlum +1",
-    head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
+    head={ name="Fu. Bandeau +4", augments={'Enhances "Battuta" effect',}},
     body="Futhark Coat +1",
     hands="Runeist Mitons +1",
     legs="Eri. Leg Guards +3",
@@ -646,7 +646,7 @@ function init_gear_sets()
 	
 	
 	-- {ammo="Staunch Tathlum +1",
-		-- head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
+		-- head={ name="Fu. Bandeau +4", augments={'Enhances "Battuta" effect',}},
 		-- body="Futhark Coat +1",
 		-- hands="Turms Mittens +1",
 		-- legs="Eri. Leg Guards +3",

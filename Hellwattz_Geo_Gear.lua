@@ -120,7 +120,7 @@ function init_gear_sets()
         back="Lifestream Cape",waist="Ninurta's Sash",legs="Geo. Pants +1",feet="Regal Pumps +1"}
 
 	sets.midcast.Geomancy = {main="Idris",range="Dunna",head="Azimuth Hood +1",
-		body="Bagua Tunic +1",hands="Geo. Mitaines +3",neck="Incanter's Torque",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Bagua Tunic +1",hands="Geo. Mitaines +4",neck="Incanter's Torque",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Lifestream Cape",waist="Austerity Belt +1",legs="Bagua Pants +1",feet="Azimuth Gaiters +1"}
 
 
@@ -242,7 +242,7 @@ function init_gear_sets()
 	sets.resting = {main="Idris",sub="Genmei Shield",range="Dunna",
         head="Wivre Hairpin",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Merman's Earring",
         body="Geomancy tunic +3",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Repulse Mantle",waist="Fucho-no-Obi",legs="Assid. Pants +1",feet="Geo. Sandals +3"}
+        back="Repulse Mantle",waist="Fucho-no-Obi",legs="Assid. Pants +1",feet="Geo. Sandals +4"}
 
 	-- Idle sets
 
@@ -260,13 +260,13 @@ function init_gear_sets()
         back="Repulse Mantle",
 		waist="Fucho-no-Obi",
 		legs="Assid. Pants +1",
-		feet="Geo. Sandals +3"}
+		feet="Geo. Sandals +4"}
 		
 	-- feet Mallquis Clogs +2
 	sets.idle.PDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum",
 		head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Merman's Earring",
-		body="Geomancy tunic +3",hands="Geo. Mitaines +3",ring1="Defending Ring",ring2="Shadow Ring",
-		back="Shadow Mantle",waist="Flax Sash",legs="Hagondes Pants +1",feet="Geo. Sandals +3"}
+		body="Geomancy tunic +3",hands="Geo. Mitaines +4",ring1="Defending Ring",ring2="Shadow Ring",
+		back="Shadow Mantle",waist="Flax Sash",legs="Hagondes Pants +1",feet="Geo. Sandals +4"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
 
@@ -274,12 +274,12 @@ function init_gear_sets()
 	-- body Jhakri Robe +2 Legs Psycloth Lappas
 	sets.idle.Pet = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
-		body="Hagondes Coat +1",hands="Geo. Mitaines +3",ring1="Defending Ring",ring2="Dark Ring",
+		body="Hagondes Coat +1",hands="Geo. Mitaines +4",ring1="Defending Ring",ring2="Dark Ring",
 		back="Repulse Mantle",waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals +1"}
 
 	sets.idle.PDT.Pet = {main="Idris",sub="Enki Strap",range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
-		body="Hagondes Coat +1",hands="Geo. Mitaines +3",ring1="Defending Ring",ring2="Dark Ring",
+		body="Hagondes Coat +1",hands="Geo. Mitaines +4",ring1="Defending Ring",ring2="Dark Ring",
 		back="Repulse Mantle",waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals +1"}
 
 	-- .Indi sets are for when an Indi-spell is active.
@@ -316,7 +316,7 @@ function init_gear_sets()
 	
 	sets.defense.GeoLock = sets.midcast.Geomancy.Indi
 
-	sets.Kiting = {feet="Geo. Sandals +3"}
+	sets.Kiting = {feet="Geo. Sandals +4"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}

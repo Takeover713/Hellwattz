@@ -7,7 +7,7 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
-	state.Weapons:options('LeadenMelee','SavageWeapons','SavageWeapon','LastStand','Leaden','LastStandDW') --'LeadenMelee','LeadenMelee2','AeolianWeapons','LeadenRanged','LastStand','SavageWeapons','SavageWeapon','Absorb'
+	state.Weapons:options('LeadenMelee','SavageWeapons','SavageWeapon','Fomalhaut','Leaden','LastStandDW') --'LeadenMelee','LeadenMelee2','AeolianWeapons','LeadenRanged','LastStand','SavageWeapons','SavageWeapon','Absorb'
 	state.CompensatorMode:options('Always','300','1000','Never')
 	
     gear.RAbullet = "Chrono Bullet"
@@ -81,6 +81,7 @@ function init_gear_sets()
 	sets.weapons.LeadenMelee2 = {main={ name="Rostam", augments={'Path: B',}},sub='Tauret',range="Death Penalty"}
 	--sets.weapons.Prime = {main="Naegling",sub="Gleti's Knife",range="Earp"}
 	sets.weapons.LeadenRanged = {main={ name="Rostam", augments={'Path: A',}},sub='Tauret',range="Death Penalty"}
+	sets.weapons.Fomalhaut = {main="Naegling",sub="Nusku Shield",range="Fomalhaut"}
 	sets.weapons.LastStand = {main={ name="Rostam", augments={'Path: A',}},sub="Nusku Shield",range="Fomalhaut"}
 	sets.weapons.LastStandDW = {main="Naegling",sub='Tauret',range="Fomalhaut"}
 	--sets.weapons.RostamRanged = {main="Rostam",sub={name="Rostam", bag="Wardrobe 3"},range="Death Penalty"}
@@ -93,7 +94,7 @@ function init_gear_sets()
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +4"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +1"}
-    sets.precast.FoldDoubleBust = {hands="Lanun Gants +3"}
+    sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
 
     sets.precast.CorsairRoll = {
 	main={ name="Rostam", augments={'Path: C',}},
@@ -227,7 +228,7 @@ function init_gear_sets()
         head="Chass. Tricorne +3",
 		neck="Commodore Charm +2",
         body="Laksa. Frac +4",
-		hands={ name="Lanun Gants +3", augments={'Enhances "Fold" effect',}},
+		hands={ name="Lanun Gants +4", augments={'Enhances "Fold" effect',}},
 		Left_ring="Crepuscular Ring",
 		back={ name="Camulus's Mantle", augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}},
 		waist="Impulse Belt",
@@ -493,11 +494,11 @@ function init_gear_sets()
 		
 	sets.buff['Triple Shot'] = {
 	body="Chasseur's Frac +3",
-	hands="Lanun Gants +3"}
+	hands="Lanun Gants +4"}
 	
 	-- sets.buff['Triple Shot'] = {
 	-- body="Chasseur's Frac +3",
-	-- hands="Lanun Gants +3",
+	-- hands="Lanun Gants +4",
 	-- head="Oshosi Mask +1",
 	-- legs="Osh. Trousers +1",
 	-- feet="Osh. Leggings +1",
