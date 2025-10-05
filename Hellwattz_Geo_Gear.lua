@@ -67,15 +67,18 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
-	sets.precast.JA['Life Cycle'] = {body="Geomancy tunic +3"} -- back=gear.idle_jse_back
-	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
-	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +1"}
-	sets.precast.JA['Full Circle'] = {head="Azimuth Hood +1",hands="Bagua Mitaines +1"}
+	sets.precast.JA.Bolster = {body="Bagua Tunic +3"}
+	sets.precast.JA['Life Cycle'] = {body="Geomancy Tunic +3"} -- back=gear.idle_jse_back
+	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +3"}
+	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +3"}
+	sets.precast.JA['Full Circle'] = {head="Azimuth Hood +3",hands="Bagua Mitaines +3"}
+	
+	-- Weapons sets
+	sets.weapons.Idris = {main='Idris',sub='Genmei Shield'}
+	sets.WakeUpWeapons = {main="Prime Maul"}
 	
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
 	sets.buff.Entrust = {}
-	sets.WakeUpWeapons = {main="Prime Maul"}
 	
 	-- Fast cast sets for spells
 
@@ -104,11 +107,25 @@ function init_gear_sets()
 		body="Twilight Cloak",hands="Volte Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Lifestream Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
 	
-	sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {hands="Bagua Mitaines +1"})
+	sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {hands="Bagua Mitaines +3"})
 	
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
-	sets.precast.WS = {}
+	sets.precast.WS = {
+    ammo="Crepuscular Pebble",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body="Nyame Mail",
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet="Nyame Sollerets",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Regal Earring",
+    right_ear="Dominance Earring +1",
+    left_ring="Epaminondas's Ring",
+    right_ring="Metamor. Ring +1",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Accuracy+20 Attack+20','INT+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
 
 
 	--------------------------------------
@@ -119,13 +136,27 @@ function init_gear_sets()
         body="Vanir cotehardie",hands="Hagondes Cuffs +1",ring1="Prolix Ring",ring2="Veneficium Ring",
         back="Lifestream Cape",waist="Ninurta's Sash",legs="Geo. Pants +1",feet="Regal Pumps +1"}
 
-	sets.midcast.Geomancy = {main="Idris",range="Dunna",head="Azimuth Hood +1",
-		body="Bagua Tunic +1",hands="Geo. Mitaines +4",neck="Incanter's Torque",ring1="Stikini Ring",ring2="Stikini Ring",
-		back="Lifestream Cape",waist="Austerity Belt +1",legs="Bagua Pants +1",feet="Azimuth Gaiters +1"}
+	sets.midcast.Geomancy = {main="Idris",sub="Genmei Shield",range="Dunna",head="Azimuth Hood +3",
+		body="Bagua Tunic +3",hands="Geo. Mitaines +4",neck="Incanter's Torque",ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Lifestream Cape",waist="Austerity Belt +1",legs="Bagua Pants +3",feet="Azimuth Gaiters +3"}
 
 
 	--Extra Indi duration as long as you can keep your 900 skill cap.
-	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {legs="Bagua Pants +1",feet="Azimuth Gaiters +1"}) -- back=gear.idle_jse_back
+	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {legs="Bagua Pants +3",feet="Azimuth Gaiters +3"}) -- back=gear.idle_jse_back
+	
+	sets.midcast['Absorb-TP'] = {
+		head="Azimuth Hood +3",
+		body="Azimuth Coat +3",
+		hands="Azimuth Gloves +3",
+		legs="Azimuth Tights +3",
+		feet="Azimuth Gaiters +3",
+		neck="Erra Pendant",
+		waist="Null Belt",
+		left_ear="Malignance Earring",
+		right_ear="Crep. Earring",
+		left_ring="Stikini Ring",
+		right_ring="Stikini Ring",
+		back="Null Shawl"}
 		
     sets.midcast.Cure = {main="Tamaxchi",sub="Genmei Shield",
         body="Heka's Kalasiris",hands="Bokwus Gloves",ring1="Haoma Ring",ring2="Sirona's Ring",
@@ -148,18 +179,48 @@ function init_gear_sets()
 	
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Oranyan",sub="Clemency Grip"})
 	
-    sets.midcast['Elemental Magic'] = {main="Marin Staff +1",sub="Elder's Grip +1",range="Aureole",
-        head="Hagondes Hat +1",neck="Saevus Pendant +1",ear1="Friomisi Earring",ear2="Novio Earring",
-        body="Count's Garb",hands="Yaoyotl Gloves",ring1="Shiva Ring +1",ring2="Strendu Ring",
-        back="Toro Cape",waist="Aswang Sash",legs="Hagondes Pants +1",feet="Umbani Boots"}
+    sets.midcast['Elemental Magic'] = {
+		main="Bunzi's Rod",
+		sub="Ammurapi Shield",
+		ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+		head="Azimuth Hood +3",
+		body="Azimuth Coat +3",
+		hands="Azimuth Gloves +3",
+		legs="Azimuth Tights +3",
+		feet="Azimuth Gaiters +3",
+		neck="Mizu. Kubikazari", --Baetyl pendant Warder Of Love
+		waist={ name="Acuity Belt +1", augments={'Path: A',}}, -- Sacro cord Alexander
+		left_ear="Malignance Earring",
+		right_ear="Regal Earring",
+		left_ring="Metamor. Ring +1",
+		right_ring="Metamor. Ring +1",
+		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
+}
 
-    sets.midcast['Elemental Magic'].Resistant = {}
-		
+
+	sets.MagicBurst={
+		main="Bunzi's Rod",
+		sub="Ammurapi Shield",
+		ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}}, -- upgrade this
+		head="Azimuth Hood +3",
+		body="Azimuth Coat +3",
+		hands="Bagua Mitaines +3", 
+		legs="Azimuth Tights +3",
+		feet="Azimuth Gaiters +3",
+		neck="Mizu. Kubikazari",
+		waist="Acuity Belt +1", --upgrade thhis
+		left_ear="Malignance Earring",
+		right_ear="Regal Earring",
+		left_ring="Metamor. Ring +1", -- augment this
+		right_ring="Mujin Band", -- buy this
+		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
+}
+
+    sets.midcast['Elemental Magic'].Resistant = {}	
     sets.midcast['Elemental Magic'].Fodder = {}
-
-	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {sub="Niobid Strap",ammo="Pemphredo Tathlum",ear1="Regal Earring",ear2="Barkaro. Earring",hands="Amalric Gages +1"})
-	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {sub="Niobid Strap",ammo="Pemphredo Tathlum",ear1="Regal Earring",ear2="Barkaro. Earring",hands="Amalric Gages +1",})
-	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {sub="Alber Strap",ammo="Pemphredo Tathlum",ear1="Regal Earring",ear2="Barkaro. Earring",hands="Amalric Gages +1"})
+	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {})
+	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {})
+	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {})
 		
     sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
         head=gear.merlinic_nuke_head,neck="Erra Pendant",ear1="Regal Earring",ear2="Barkaro. Earring",
@@ -230,57 +291,107 @@ function init_gear_sets()
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",ear1="Gifted Earring",ear2="Loquacious Earring",waist="Sekhmet Corset"})
 
 	-- Gear for specific elemental nukes.
-	sets.element.Wind = {main="Marin Staff +1"}
-	sets.element.Ice = {main="Ngqoqwanb"}
-	sets.element.Earth = {neck="Quanpur Necklace"}
+	sets.element.Wind = {}
+	sets.element.Ice = {}
+	sets.element.Earth = {}
 
 	--------------------------------------
 	-- Idle/resting/defense/etc sets
 	--------------------------------------
 --Assid. Pants +1
 	-- Resting sets
-	sets.resting = {main="Idris",sub="Genmei Shield",range="Dunna",
-        head="Wivre Hairpin",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Merman's Earring",
-        body="Geomancy tunic +3",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Repulse Mantle",waist="Fucho-no-Obi",legs="Assid. Pants +1",feet="Geo. Sandals +4"}
+	sets.resting = {
+		main="Idris",
+		sub="Genmei Shield",
+		range="Dunna",
+        head="Azimuth Hood +3",
+		neck="Loricate Torque +1",
+		ear1="Etiolation Earring",
+		ear2="Genmei Earring",
+        body="Azimuth Coat +3",
+		hands="Geo. Mitaines +4",
+		ring1="Defending Ring",
+		ring2="Murky Ring",
+        back="Solemnity Cape",
+		waist="Isa Belt",
+		legs="Assid. Pants +1",
+		feet="Geo. Sandals +4"}
 
 	-- Idle sets
 
-	sets.idle = {main="Idris",
-	sub="Genmei Shield",
-	range="Dunna",
-        head="Befouled crown",
+	sets.idle = {
+		main="Idris",
+		sub="Genmei Shield",
+		range="Dunna",
+        head="Azimuth Hood +3",
 		neck="Loricate Torque +1",
-		ear1="Merman's Earring",
-		ear2="Merman's Earring",
-        body="Geomancy tunic +3",
-		hands="Bagua Mitaines +1",
+		ear1="Etiolation Earring",
+		ear2="Genmei Earring",
+        body="Azimuth Coat +3",
+		hands="Geo. Mitaines +4",
 		ring1="Defending Ring",
-		ring2="Paguroidea Ring",
-        back="Repulse Mantle",
-		waist="Fucho-no-Obi",
+		ring2="Murky Ring",
+        back="Solemnity Cape",
+		waist="Isa Belt",
 		legs="Assid. Pants +1",
 		feet="Geo. Sandals +4"}
 		
 	-- feet Mallquis Clogs +2
-	sets.idle.PDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum",
-		head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Merman's Earring",
-		body="Geomancy tunic +3",hands="Geo. Mitaines +4",ring1="Defending Ring",ring2="Shadow Ring",
-		back="Shadow Mantle",waist="Flax Sash",legs="Hagondes Pants +1",feet="Geo. Sandals +4"}
+	sets.idle.PDT = {
+		main="Idris",
+		sub="Genmei Shield",
+		range="Dunna",
+        head="Azimuth Hood +3",
+		neck="Loricate Torque +1",
+		ear1="Etiolation Earring",
+		ear2="Genmei Earring",
+        body="Azimuth Coat +3",
+		hands="Geo. Mitaines +4",
+		ring1="Defending Ring",
+		ring2="Murky Ring",
+        back="Solemnity Cape",
+		waist="Isa Belt",
+		legs="Assid. Pants +1",
+		feet="Geo. Sandals +4"}
 		
-	sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
+	sets.idle.TPEat = set_combine(sets.idle, {})
 
 	-- .Pet sets are for when Luopan is present.
 	-- body Jhakri Robe +2 Legs Psycloth Lappas
-	sets.idle.Pet = {main="Idris",sub="Genmei Shield",range="Dunna",
-		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
-		body="Hagondes Coat +1",hands="Geo. Mitaines +4",ring1="Defending Ring",ring2="Dark Ring",
-		back="Repulse Mantle",waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals +1"}
+	sets.idle.Pet = {
+		main="Idris",
+		sub="Genmei Shield",
+		range="Dunna",
+		head="Azimuth Hood +3",
+		neck={ name="Bagua Charm +2", augments={'Path: A',}},
+		ear1="Etiolation Earring",
+		ear2="Genmei Earring",
+		body="Azimuth Coat +3",
+		hands="Geo. Mitaines +4",
+		ring1="Defending Ring",
+		ring2="Murky Ring",
+		back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Pet: "Regen"+5',}},
+		waist="Isa Belt",
+		legs="Nyame Flanchard",
+		feet="Bagua Sandals +3"}
 
-	sets.idle.PDT.Pet = {main="Idris",sub="Enki Strap",range="Dunna",
-		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
-		body="Hagondes Coat +1",hands="Geo. Mitaines +4",ring1="Defending Ring",ring2="Dark Ring",
-		back="Repulse Mantle",waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals +1"}
+	sets.idle.PDT.Pet = {
+		main="Idris",
+		sub="Genmei Shield",
+		range="Dunna",
+		head="Azimuth Hood +3",
+		neck={ name="Bagua Charm +2", augments={'Path: A',}},
+		ear1="Etiolation Earring",
+		ear2="Genmei Earring",
+		body="Azimuth Coat +3",
+		hands="Geo. Mitaines +4",
+		ring1="Defending Ring",
+		ring2="Murky Ring",
+		back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Pet: "Regen"+5',}},
+		waist="Isa Belt",
+		legs="Nyame Flanchard",
+		feet="Bagua Sandals +3"
+	}
 
 	-- .Indi sets are for when an Indi-spell is active.
 	sets.idle.Indi = set_combine(sets.idle, {})
@@ -288,27 +399,30 @@ function init_gear_sets()
 	sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {}) 
 	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
 
-	sets.idle.Weak = {main="Idris",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Befouled Crown",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Merman's Earring",
-		body="Hagondes Coat +1",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Repulse Mantle",waist="Flax Sash",legs="Assid. Pants +1",feet="Azimuth Gaiters +1"}
+	sets.idle.Weak = {
+		main="Idris",
+		sub="Genmei Shield",
+		range="Dunna",
+        head="Azimuth Hood +3",
+		neck="Loricate Torque +1",
+		ear1="Etiolation Earring",
+		ear2="Genmei Earring",
+        body="Azimuth Coat +3",
+		hands="Geo. Mitaines +4",
+		ring1="Defending Ring",
+		ring2="Murky Ring",
+        back="Solemnity Cape",
+		waist="Isa Belt",
+		legs="Assid. Pants +1",
+		feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},}
 
 	-- Defense sets
 	
-	sets.defense.PDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum",
-		head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Handler's Earring +1",
-		body="Hagondes Coat +1",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Repulse Mantle",waist="Flax Sash",legs="Hagondes Pants +1",feet="Azimuth Gaiters +1"}
+	sets.defense.PDT = set_combine(sets.idle, {})
 
-	sets.defense.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum",
-		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Handler's Earring +1",
-		body="Hagondes Coat +1",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Repulse Mantle",waist="Flax Sash",legs="Hagondes Pants +1",feet="Azimuth Gaiters +1"}
+	sets.defense.MDT = set_combine(sets.idle, {})
 		
-    sets.defense.MEVA = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum",
-        head="Azimuth Hood +1",neck="Warder's Charm +1",ear1="Merman's Earring",ear2="Merman's Earring",
-		body="Vanir Cotehardie",hands="Hagondes Cuffs +1",ring1="Defending Ring",Ring2="Dark Ring",
-        back="Repulse Mantle",waist="Luminary Sash",legs="Hagondes Pants +1",feet="Azimuth Gaiters +1"}
+    sets.defense.MEVA = set_combine(sets.idle, {})
 		
 	sets.defense.PetPDT = sets.idle.PDT.Pet
 		
@@ -322,9 +436,7 @@ function init_gear_sets()
 	sets.NightIdle = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {feet=gear.chironic_treasure_feet})
 	
-	sets.HPDown = {head="Pixie Hairpin +1",ear1="Mendicant's Earring",ear2="Evans Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		back="Swith Cape +1",legs="Shedir Seraweels",feet="Jhakri Pigaches +2"}
+	sets.HPDown = {}
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 
@@ -338,15 +450,41 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee group
-	sets.engaged = {main="Idris",ammo="Hasty Pinion +1",
-		head="Befouled Crown",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Jhakri Robe +2",hands="Gazu Bracelet +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Rancorous Mantle",waist="Witful Belt",legs="Assid. Pants +1",feet="Battlecast Gaiters"}
-		
-	sets.engaged.DW = {ammo="Hasty Pinion +1",
-		head="Befouled Crown",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-		body="Jhakri Robe +2",hands="Regal Cuffs",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Rancorous Mantle",waist="Witful Belt",legs="Assid. Pants +1",feet="Battlecast Gaiters"}
+	sets.engaged = {
+	main="Idris",
+    sub="Genmei Shield",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Azimuth Hood +3",
+    body="Nyame Mail",
+    hands="Gazu Bracelets +1",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet="Azimuth Gaiters +3",
+    neck="Combatant's Torque",
+    waist="Null Belt",
+    left_ear="Dedition Earring",
+    right_ear="Crep. Earring",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
+    back={ name="Nantosuelta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
+	}
+
+	sets.engaged.DW = {
+	main="Idris",
+    sub="C.Palug Hammer",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Azimuth Hood +3",
+    body="Nyame Mail",
+    hands="Gazu Bracelets +1",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet="Azimuth Gaiters +3",
+    neck="Combatant's Torque",
+    waist="Null Belt",
+    left_ear="Dedition Earring",
+    right_ear="Crep. Earring",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
+    back={ name="Nantosuelta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
+	}
 
 	--------------------------------------
 	-- Custom buff sets
@@ -356,12 +494,8 @@ function init_gear_sets()
 	sets.RecoverMP = {body="Seidr Cotehardie"}
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {head="Ea Hat",neck="Mizu. Kubikazari",body="Ea Houppelande",ring1="Mujin Band",legs="Ea Slops",feet="Jhakri Pigaches +2"}
-	sets.RecoverBurst = {head="Ea Hat",neck="Mizu. Kubikazari",body="Seidr Cotehardie",ring1="Mujin Band",legs="Ea Slops",feet="Jhakri Pigaches +2"}
-
-	-- Weapons sets
-	sets.weapons.Idris = {main='Idris',sub='Genmei Shield'}
-	sets.weapons.DualWeapons = {main='Nehushtan',sub='Nehushtan'}
+	sets.RecoverBurst = {}
+	
 end
 
 -- Select default macro book on initial load or subjob change.

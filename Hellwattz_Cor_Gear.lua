@@ -99,7 +99,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll = {
 	main={ name="Rostam", augments={'Path: C',}},
 	range="Compensator",
-	head="Lanun Tricorne +3",
+	head="Lanun Tricorne +4",
 	neck="Regal Necklace",
 	hands="Chasseur's Gants +3",
 	ring2="Luzaf's Ring",
@@ -108,7 +108,7 @@ function init_gear_sets()
 	
 	-- sets.precast.CorsairRoll = {
 	-- main={ name="Rostam", augments={'Path: C',}},
-	-- head="Lanun Tricorne +3",
+	-- head="Lanun Tricorne +4",
 	-- neck="Regal Necklace",
 	-- hands="Chasseur's Gants +3",
 	-- ring2="Luzaf's Ring",
@@ -294,7 +294,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},}
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Lanun Tricorne +3", -- need to +3 relic
+        head="Lanun Tricorne +4", -- need to +3 relic
     body="Laksa. Frac +4",
     hands="Chasseur's Gants +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -310,7 +310,7 @@ function init_gear_sets()
 		
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
-        head="Lanun Tricorne +3", -- need to +3 relic
+        head="Lanun Tricorne +4", -- need to +3 relic
     body="Laksa. Frac +4",
     hands="Chasseur's Gants +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -519,7 +519,7 @@ function init_gear_sets()
     -- sets.idle = {    
 	-- range="Compensator",
     -- ammo="Eminent Bullet",
-    -- head={ name="Lanun Tricorne +3", augments={'Enhances "Winning Streak" effect',}},
+    -- head={ name="Lanun Tricorne +4", augments={'Enhances "Winning Streak" effect',}},
     -- body="Mekosu. Harness",
     -- hands="Umuthi Gloves",
     -- legs="Carmine Cuisses +1",
