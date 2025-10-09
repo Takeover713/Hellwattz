@@ -158,26 +158,66 @@ function init_gear_sets()
 		right_ring="Stikini Ring",
 		back="Null Shawl"}
 		
-    sets.midcast.Cure = {main="Tamaxchi",sub="Genmei Shield",
-        body="Heka's Kalasiris",hands="Bokwus Gloves",ring1="Haoma Ring",ring2="Sirona's Ring",
-        back="Lifestream Cape",legs="Geo. Pants +1",feet="Hagondes Sabots +1"}
+    sets.midcast.Cure = {
+		main="Daybreak",
+        sub="Ammurapi Shield",
+        range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+        head="Vanya Hood",
+        body="Vanya Robe",
+        hands="Vanya Cuffs",
+        legs="Vanya Slops",
+        feet="Vanya Clogs",
+        neck="Incanter's Torque",
+        waist="Luminary Sash",
+        left_ear="Mendi. Earring",
+        right_ear="Meili Earring",
+        left_ring="Stikini Ring", -- stikini +1
+        right_ring="Stikini Ring", -- stikini +1
+        back="Tempered Cape +1"
+	}
 		
-    sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Curatio Grip",ammo="Hasty Pinion +1",
-        head="Amalric Coif +1",neck="Phalaina Locket",ear1="Gifted Earring",ear2="Etiolation Earring",
-        body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Lebeche Ring",
-        back="Twilight Cape",waist="Hachirin-no-Obi",legs="Geo. Pants +1",feet="Vanya Clogs"}
+    sets.midcast.LightWeatherCure = {
+		main="Daybreak",
+        sub="Ammurapi Shield",
+        range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+        head="Vanya Hood",
+        body="Vanya Robe",
+        hands="Vanya Cuffs",
+        legs="Vanya Slops",
+        feet="Vanya Clogs",
+        neck="Incanter's Torque",
+        waist="Luminary Sash",
+        left_ear="Mendi. Earring",
+        right_ear="Meili Earring",
+        left_ring="Stikini Ring", -- stikini +1
+        right_ring="Stikini Ring", -- stikini +1
+        back="Tempered Cape +1"
+	}
 		
 		--Cureset for if it's not light weather but is light day.
-    sets.midcast.LightDayCure = {main=gear.gada_healing_club,sub="Sors Shield",ammo="Hasty Pinion +1",
-        head="Amalric Coif +1",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Etiolation Earring",
-        body="Zendik Robe",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Lebeche Ring",
-        back="Twilight Cape",waist="Hachirin-no-Obi",legs="Geo. Pants +1",feet="Vanya Clogs"}
+    sets.midcast.LightDayCure = {
+		main="Daybreak",
+        sub="Ammurapi Shield",
+        range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+        head="Vanya Hood",
+        body="Vanya Robe",
+        hands="Vanya Cuffs",
+        legs="Vanya Slops",
+        feet="Vanya Clogs",
+        neck="Incanter's Torque",
+        waist="Luminary Sash",
+        left_ear="Mendi. Earring",
+        right_ear="Meili Earring",
+        left_ring="Stikini Ring", -- stikini +1
+        right_ring="Stikini Ring", -- stikini +1
+        back="Tempered Cape +1"
+	}
 
     sets.midcast.Curaga = sets.midcast.Cure
 
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {neck="Debilis Medallion",ring1="Haoma's Ring",ring2="Haoma's Ring"})
 	
-	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Oranyan",sub="Clemency Grip"})
+	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})
 	
     sets.midcast['Elemental Magic'] = {
 		main="Bunzi's Rod",
@@ -250,19 +290,35 @@ function init_gear_sets()
 		body="Twilight Cloak",hands="Regal Cuffs",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
-	sets.midcast['Enfeebling Magic'] = {ammo="Pemphredo Tathlum",
-		head="Befouled Crown",ring1="Stikini Ring",ring2="Stikini Ring"}
+	sets.midcast['Enfeebling Magic'] = {
+		main="Daybreak",
+		sub="Ammurapi Shield",
+		ammo="Pemphredo Tathlum",
+		head="Geo. Galero +1",
+		body="Geomancy Tunic +3",
+		hands="Geo. Mitaines +4",
+		legs="Geomancy Pants +1",
+		feet="Geo. Sandals +4",
+		neck={ name="Bagua Charm +2", augments={'Path: A',}},
+		waist="Luminary Sash",
+		left_ear="Malignance Earring",
+		right_ear="Regal Earring",
+		left_ring="Kishar Ring",
+		right_ring="Stikini Ring",
+		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
+		--back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {}
 		
-    sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {main="Idris",head="Amalric Coif +1",ear2="Barkaro. Earring",waist="Acuity Belt +1"})
-    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {main="Idris",head="Amalric Coif +1",ear2="Barkaro. Earring",waist="Acuity Belt +1"})
+    sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {})
+    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 	
-	sets.midcast.IntEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1",ear2="Barkaro. Earring",waist="Acuity Belt +1"})
-	sets.midcast.IntEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1",ear2="Barkaro. Earring",waist="Acuity Belt +1"})
+	sets.midcast.IntEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {})
+	sets.midcast.IntEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 	
-	sets.midcast.MndEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {main="Idris",range=empty,ring1="Stikini Ring"})
-	sets.midcast.MndEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {range=empty,ring1="Stikini Ring"})
+	sets.midcast.MndEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {})
+	sets.midcast.MndEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 	
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Dia II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -270,18 +326,18 @@ function init_gear_sets()
 	sets.midcast.Bio = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	
-	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {ring1="Stikini Ring"})
+	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {})
 		
-	sets.midcast['Enhancing Magic'] = {main=gear.gada_enhancing_club,sub="Ammurapi Shield",ammo="Hasty Pinion +1",
+	sets.midcast['Enhancing Magic'] = {sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
 	
-	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})
+	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {})
 	
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Genmei Shield",head="Amalric Coif +1",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"})
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {hands="Regal Cuffs"})
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {legs="Shedir Seraweels"})
 	

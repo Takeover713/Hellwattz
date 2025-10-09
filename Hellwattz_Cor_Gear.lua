@@ -77,7 +77,7 @@ function init_gear_sets()
 	sets.weapons.Absorb = {main="Naegling",sub="Nusku Shield",range=empty}
 	sets.weapons.Dyna = {main="Naegling",sub={ name="Rostam", augments={'Path: C',}},range="Ataktos"}
 	sets.weapons.AeolianWeapons = {main="Blurred Knife +1",sub="Hep. Rapier +1",range="Ataktos"}
-	sets.weapons.LeadenMelee = {main="Naegling",sub='Tauret',range="Fomalhaut"}
+	sets.weapons.LeadenMelee = {main="Naegling",sub='Tauret',range="Death Penalty"}
 	sets.weapons.LeadenMelee2 = {main={ name="Rostam", augments={'Path: B',}},sub='Tauret',range="Death Penalty"}
 	--sets.weapons.Prime = {main="Naegling",sub="Gleti's Knife",range="Earp"}
 	sets.weapons.LeadenRanged = {main={ name="Rostam", augments={'Path: A',}},sub='Tauret',range="Death Penalty"}
