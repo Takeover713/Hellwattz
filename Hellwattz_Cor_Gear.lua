@@ -12,22 +12,9 @@ function user_setup()
 	
     gear.RAbullet = "Chrono Bullet"
     gear.WSbullet = "Chrono Bullet"
-	gear.MAbullet = "Orichalc. Bullet"
+	gear.MAbullet = "Living Bullet"
 	gear.QDbullet = "Hauksbok Bullet"
     options.ammo_warning_limit = 15
-	
-	-- gear.RAbullet = "Bronze Bullet"
-    -- gear.WSbullet = "Bronze Bullet"
-	-- gear.MAbullet = "Bronze Bullet"
-	-- gear.QDbullet = "Bronze Bullet"
-    -- options.ammo_warning_limit = 15
-	
-	
-	-- gear.RAbullet = "Chrono Bullet" -- Chrono Bullet
-    -- gear.WSbullet = "Chrono Bullet"
-    -- gear.MAbullet = "Living Bullet" --For MAB WS, do not put single-use bullets here. Orichalc. Bullet
-    -- gear.QDbullet = "Living Bullet"
-    -- options.ammo_warning_limit = 15
 
 	-- gear.tp_ranger_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}}
 	-- gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'"Snapshot"+10',}}
