@@ -558,7 +558,7 @@ sets.idle = {
     
     -- Normal melee group
     -- sets.engaged = {
-		-- head="Dampening Tam",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+		-- head="Dampening Tam",neck="Iskur Gorget",ear1="Telos Earring",ear2="Brutal Earring",
 		-- body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
 		-- back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 		
@@ -587,7 +587,7 @@ sets.engaged = {
     neck="Combatant's Torque",
     waist="Reiki Yotai",
     left_ear="Dedition Earring",
-    right_ear="Cessance Earring",
+    right_ear="Telos Earring",
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -604,7 +604,7 @@ sets.engaged = {
     neck="Combatant's Torque",
     waist="Reiki Yotai",
     left_ear="Dedition Earring",
-    right_ear="Cessance Earring",
+    right_ear="Telos Earring",
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -620,7 +620,7 @@ sets.engaged = {
     neck="Combatant's Torque",
     waist="Reiki Yotai",
     left_ear="Dedition Earring",
-    right_ear="Cessance Earring",
+    right_ear="Telos Earring",
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -636,7 +636,7 @@ sets.engaged = {
     neck="Combatant's Torque",
     waist="Reiki Yotai",
     left_ear="Dedition Earring",
-    right_ear="Cessance Earring",
+    right_ear="Telos Earring",
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -653,7 +653,7 @@ sets.engaged = {
     neck="Combatant's Torque",
     waist="Reiki Yotai",
     left_ear="Dedition Earring",
-    right_ear="Cessance Earring",
+    right_ear="Telos Earring",
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -669,7 +669,7 @@ sets.engaged = {
     neck="Combatant's Torque",
     waist="Reiki Yotai",
     left_ear="Dedition Earring",
-    right_ear="Cessance Earring",
+    right_ear="Telos Earring",
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}},
