@@ -286,10 +286,10 @@ function init_gear_sets()
 		legs="Ebers Pant. +3",
 		feet="Vanya Clogs",--Kaykaus Boots +1 D: Mag. Acc. +20,Cure Potency +6,Fast Cast +4%
 		neck={ name="Clr. Torque +2", augments={'Path: A',}},
-		waist="Austerity Belt",
+		waist="Austerity Belt +1",
 		-- waist="Shinjutsu-no-obi +1", --needs augments, Lustreless Scale
 		left_ear="Magnetic Earring",
-		right_ear="Glorious Earring",
+		right_ear="Glorious Earring", -- need to do quest for this
 		left_ring="Naji's Loop",
 		right_ring="Mephitas's Ring +1", -- needs augments, Lustreless Hide
 		back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Cure" potency +10%','Damage taken-5%',}},
@@ -312,10 +312,10 @@ function init_gear_sets()
 		legs="Ebers Pant. +3",
 		feet="Vanya Clogs",--Kaykaus Boots +1 D: Mag. Acc. +20,Cure Potency +6,Fast Cast +4%
 		neck={ name="Clr. Torque +2", augments={'Path: A',}},
-		waist="Austerity Belt",
+		waist="Austerity Belt +1",
 		-- waist="Shinjutsu-no-obi +1", --needs augments, Lustreless Scale
 		left_ear="Magnetic Earring",
-		right_ear="Glorious Earring",
+		right_ear="Glorious Earring", -- need to do quest for this
 		left_ring="Naji's Loop",
 		right_ring="Mephitas's Ring +1", --needs augments, Lustreless Hide
 		back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Cure" potency +10%','Damage taken-5%',}},
@@ -367,7 +367,7 @@ function init_gear_sets()
 	neck="Debilis Medallion",
 	waist="Bishop's Sash",
 	left_ear="Meili Earring",
-	right_ear="Ebers Earring +2",
+	right_ear="Ebers Earring +1",
 	left_ring="Menelaus's Ring",
 	right_ring="Haoma's Ring",
 	back={ name="Alaunus's Cape", augments={'"Fast Cast"+10','Damage taken-5%',}},
@@ -393,13 +393,13 @@ function init_gear_sets()
 
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
 	sets.midcast['Enhancing Magic'] = {
-		main={ name="Gada", augments={'Enh. Mag. eff. dur. +5','Mag. Acc.+4','"Mag.Atk.Bns."+18',}},
+		main="Gada",
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Befouled Crown",
 		body="Inyanga Jubbah +2",
-		hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +4',}},
-		legs={ name="Telchine Braconi", augments={'"Cure" potency +2%','Enh. Mag. eff. dur. +7',}},
+		hands="Telchine Gloves", -- need to get the telchine   gear
+		legs="Telchine Braconi",
 		feet="Theo. Duckbills +3",
 		neck="Colossus's Torque",
 		waist="Embla Sash",
@@ -411,13 +411,13 @@ function init_gear_sets()
 }
 
 	sets.midcast.Haste = {
-		main={ name="Gada", augments={'Enh. Mag. eff. dur. +5','Mag. Acc.+4','"Mag.Atk.Bns."+18',}},
+		main="Gada",
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Befouled Crown",
 		body="Inyanga Jubbah +2",
-		hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +4',}},
-		legs={ name="Telchine Braconi", augments={'"Cure" potency +2%','Enh. Mag. eff. dur. +7',}},
+		hands="Telchine Gloves",
+		legs="Telchine Braconi",
 		feet="Theo. Duckbills +3",
 		neck="Colossus's Torque",
 		waist="Embla Sash",
@@ -528,7 +528,7 @@ function init_gear_sets()
 		neck="Null Loop",
 		waist="Obstin. Sash",
 		left_ear="Regal Earring",
-		right_ear="Ebers Earring +2",
+		right_ear="Ebers Earring +1",
 		left_ring="Stikini Ring",
 		right_ring="Stikini Ring",
 		back="Null Shawl",
@@ -546,7 +546,7 @@ function init_gear_sets()
 		neck="Null Loop",
 		waist="Obstin. Sash",
 		left_ear="Regal Earring",
-		right_ear="Ebers Earring +2",
+		right_ear="Ebers Earring +1",
 		left_ring="Stikini Ring",
 		right_ring="Stikini Ring",
 		back="Null Shawl",
