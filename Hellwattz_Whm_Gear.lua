@@ -12,19 +12,6 @@ function user_setup()
 end
 --C3 730	C4 1200		C5 1400		C6 1800
 --Cg3 855	Cg4 1402	Cg5 1904
---AF Theophany  ALL
-
---Theophany Cap - Set bonus enfeebles
-	--Khoma Cloth, S. Faulpie Leather, Cyan Orb x2
-
---DONE--
---Mitts - Cure Potency II 
---Theo. Duckbills - Enhancing Duration and set bonus enfeebles 
---Theo Bliaut - Cure Potency II and set bonus enfeebles curaga 
---Th. Pant. - Cursna and Regen
-
---Relic --DONE--
-
 
 -- Define sets and vars used by this job file.
 function init_gear_sets()
@@ -189,7 +176,7 @@ function init_gear_sets()
 		main="C. Palug hammer",
 		sub="Sors Shield",
 		ammo="Impatiens",
-		head="Piety Cap +3",
+		head="Piety Cap +4",
 		body="Inyanga Jubbah +2",
 		hands="Fanatic Gloves",
 		legs="Ebers Pant. +3",
@@ -212,8 +199,8 @@ function init_gear_sets()
 	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Genmei Shield"})
 
     -- Precast sets to enhance JAs
-    sets.precast.JA.Benediction = {body="Piety Bliaut +3"}
-	sets.precast.JA.Devotion = {head="Piety Cap +3"}
+    sets.precast.JA.Benediction = {body="Piety Bliaut +4"}
+	sets.precast.JA.Devotion = {head="Piety Cap +4"}
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {}
@@ -282,7 +269,7 @@ function init_gear_sets()
 		ammo="Pemphredo Tathlum",
 		head="Ebers Cap +3", -- Kaykaus Mitra +1 C: Spell interruption rate -12%
 		body="Ebers Bliaut +3",
-		hands="Theophany Mitts +3",
+		hands="Theophany Mitts +4",
 		legs="Ebers Pant. +3",
 		feet="Vanya Clogs",--Kaykaus Boots +1 D: Mag. Acc. +20,Cure Potency +6,Fast Cast +4%
 		neck={ name="Clr. Torque +2", augments={'Path: A',}},
@@ -307,8 +294,8 @@ function init_gear_sets()
 		sub="Thuellaic Ecu +1",
 		ammo="Pemphredo Tathlum",
 		head="Ebers Cap +3", -- Kaykaus Mitra +1 C: Spell interruption rate -12%
-		body="Theo. Bliaut +3",
-		hands="Theophany Mitts +3",
+		body="Theo. Bliaut +4",
+		hands="Theophany Mitts +4",
 		legs="Ebers Pant. +3",
 		feet="Vanya Clogs",--Kaykaus Boots +1 D: Mag. Acc. +20,Cure Potency +6,Fast Cast +4%
 		neck={ name="Clr. Torque +2", augments={'Path: A',}},
@@ -362,7 +349,7 @@ function init_gear_sets()
 	head="Vanya Hood",
 	body="Ebers Bliaut +3",
 	hands="Fanatic Gloves",
-	legs="Theophany Pantaloons +3",
+	legs="Theophany Pantaloons +4",
 	feet="Vanya Clogs",
 	neck="Debilis Medallion",
 	waist="Bishop's Sash",
@@ -445,14 +432,14 @@ function init_gear_sets()
 	main="Bolelabunga",
 	head="Inyanga Tiara +2",
 	hands="Ebers Mitts +3",
-	body="Piety Bliaut +3",
-	legs="Theophany Pantaloons +3"
+	body="Piety Bliaut +4",
+	legs="Theophany Pantaloons +4"
 })
 	
-	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",legs="Piety Pantaln. +3",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",legs="Piety Pantaln. +3",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",feet="Piety Duckbills +4",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",feet="Piety Duckbills +4",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",legs="Piety Panta. +4",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",legs="Piety Panta. +4",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	
 	
 	sets.midcast.BarElement = {
@@ -462,7 +449,7 @@ function init_gear_sets()
 		head="Ebers Cap +3",
 		body="Ebers Bliaut +3",
 		hands="Ebers Mitts +3",
-		legs="Piety Pantaln. +3",
+		legs="Piety Panta. +4",
 		feet="Ebers Duckbills +3",
 		neck="Incanter's Torque",
 		waist="Embla Sash",
@@ -521,9 +508,9 @@ function init_gear_sets()
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Theophany Cap +3",
-		body="Theo. Bliaut +3",
+		body="Theo. Bliaut +4",
 		hands="Theo. Mitts +3",
-		legs="Theophany Pantaloons +3",
+		legs="Theophany Pantaloons +4",
 		feet="Theo. Duckbills +3",
 		neck="Null Loop",
 		waist="Obstin. Sash",
@@ -539,9 +526,9 @@ function init_gear_sets()
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Theophany Cap +3",
-		body="Theo. Bliaut +3",
+		body="Theo. Bliaut +4",
 		hands="Theo. Mitts +3",
-		legs="Theophany Pantaloons +3",
+		legs="Theophany Pantaloons +4",
 		feet="Theo. Duckbills +3",
 		neck="Null Loop",
 		waist="Obstin. Sash",
@@ -631,7 +618,7 @@ function init_gear_sets()
 
 	--sets.HPCure = {main="Queller Rod",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		--head="Blistering Sallet +1",neck="Nodens Gorget",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		--body="Kaykaus Bliaut",hands="Theophany Mitts +3",ring1="Kunaji Ring",ring2="Meridian Ring",
+		--body="Kaykaus Bliaut",hands="Theophany Mitts +4",ring1="Kunaji Ring",ring2="Meridian Ring",
 		--back="Alaunus's Cape",waist="Eschan Stone",legs="Ebers Pant. +3",feet="Kaykaus Boots"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
