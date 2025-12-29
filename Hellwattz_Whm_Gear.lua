@@ -273,8 +273,7 @@ function init_gear_sets()
 		legs="Ebers Pant. +3",
 		feet="Vanya Clogs",--Kaykaus Boots +1 D: Mag. Acc. +20,Cure Potency +6,Fast Cast +4%
 		neck={ name="Clr. Torque +2", augments={'Path: A',}},
-		waist="Austerity Belt +1",
-		-- waist="Shinjutsu-no-obi +1", --needs augments, Lustreless Scale
+		waist="Shinjutsu-no-obi +1",
 		left_ear="Magnetic Earring",
 		right_ear="Glorious Earring", -- need to do quest for this
 		left_ring="Naji's Loop",
@@ -299,8 +298,7 @@ function init_gear_sets()
 		legs="Ebers Pant. +3",
 		feet="Vanya Clogs",--Kaykaus Boots +1 D: Mag. Acc. +20,Cure Potency +6,Fast Cast +4%
 		neck={ name="Clr. Torque +2", augments={'Path: A',}},
-		waist="Austerity Belt +1",
-		-- waist="Shinjutsu-no-obi +1", --needs augments, Lustreless Scale
+		waist="Shinjutsu-no-obi +1",
 		left_ear="Magnetic Earring",
 		right_ear="Glorious Earring", -- need to do quest for this
 		left_ring="Naji's Loop",
@@ -438,18 +436,18 @@ function init_gear_sets()
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",feet="Piety Duckbills +4",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",feet="Piety Duckbills +4",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",legs="Piety Panta. +4",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",legs="Piety Panta. +4",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",legs="Piety Pantaln. +3",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Vocane Ring +1",legs="Piety Pantaln. +3",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	
 	
 	sets.midcast.BarElement = {
-		main="Beneficus", -- need to  get this
+		main="Beneficus",
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Ebers Cap +3",
 		body="Ebers Bliaut +3",
 		hands="Ebers Mitts +3",
-		legs="Piety Panta. +4",
+		legs="Piety Pantaln. +3",
 		feet="Ebers Duckbills +3",
 		neck="Incanter's Torque",
 		waist="Embla Sash",
